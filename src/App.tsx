@@ -525,7 +525,7 @@ export default function App() {
           <div className="w-full max-w-2xl mx-auto space-y-12 pb-16 px-0" id="tableside-qr-view">
             {/* Minimalist table anchor banner */}
             <div className="bg-[#0b0c0d] p-6 text-center flex flex-col items-center justify-center space-y-2 border-0">
-              <span className="text-[10px] font-mono tracking-widest text-[#A5F3FC]">● LIVE SITTING NODE</span>
+              <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#A5F3FC]">● LIVE SITTING NODE</span>
               <h2 className="text-sm font-mono uppercase tracking-[0.25em] text-cream-100 italic">
                 [ WELCOME TO TABLE 04 — LUNAR SITTING ]
               </h2>
@@ -536,7 +536,7 @@ export default function App() {
 
             {/* Elegant Active Experience Header */}
             <div className="space-y-4 text-center">
-              <span className="text-[10px] font-mono tracking-[0.3em] text-[#D4AF37] uppercase block mb-1">
+              <span className="text-xs font-semibold tracking-wider font-mono tracking-[0.3em] text-[#D4AF37] uppercase block mb-1">
                 — ACTIVE PROFILE: Chef's Tasting Table —
               </span>
               <h3 className="text-3xl font-serif italic text-cream-100">
@@ -545,7 +545,7 @@ export default function App() {
               <p className="text-xs text-stone-light leading-relaxed font-light max-w-lg mx-auto">
                 {activeExperience.description}
               </p>
-              <div className="inline-block px-3 py-1 bg-[#101112] text-[#A5F3FC] text-[10px] font-mono tracking-wider">
+              <div className="inline-block px-3 py-1 bg-[#101112] text-[#A5F3FC] text-xs font-semibold tracking-wider font-mono tracking-wider">
                 [ ALL RE-FILTERS SUSPENDED FOR CONTINUOUS FLIGHT ]
               </div>
             </div>
@@ -553,7 +553,7 @@ export default function App() {
             {/* Simplified Single Column Dishes List with Zero Borders */}
             <div className="space-y-6">
               <div className="flex justify-between items-center pb-2 border-b border-obsidian-900">
-                <span className="text-[10px] font-mono tracking-widest text-stone-muted uppercase">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-stone-muted uppercase">
                   [ BOTANICAL COURSES TO SCROLL ]
                 </span>
                 <span className="text-[9px] font-mono text-[#D4AF37] uppercase">
@@ -570,7 +570,7 @@ export default function App() {
                       className="bg-[#0b0b0c] p-6 flex flex-col justify-between space-y-4 transition-all hover:bg-[#101011] border-0"
                     >
                       <div>
-                        <div className="flex justify-between items-start text-[10px] font-mono">
+                        <div className="flex justify-between items-start text-xs font-semibold tracking-wider font-mono">
                           <span className="text-stone-dark tracking-wider">
                             {dish.courseNumber || `COURSE 0${idx + 1}`}
                           </span>
@@ -612,7 +612,7 @@ export default function App() {
                       </div>
 
                       {/* Bottom course actions (Tableside quick triggers) */}
-                      <div className="pt-3 border-t border-obsidian-900/60 flex justify-between items-center text-[10px] font-mono">
+                      <div className="pt-3 border-t border-obsidian-900/60 flex justify-between items-center text-xs font-semibold tracking-wider font-mono">
                         <button
                           onClick={() => setInspectingDish(dish)}
                           className="text-[#A5F3FC] hover:text-white transition-colors cursor-pointer"
@@ -639,19 +639,19 @@ export default function App() {
             {/* Interactive Composed Ticket Summary */}
             <div className="bg-[#0e0f10] p-6 text-cream-50 space-y-6 border-0">
               <div>
-                <span className="text-[10px] font-mono tracking-widest text-[#D4AF37] uppercase block mb-1">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#D4AF37] uppercase block mb-1">
                   [ TABLE 04 SITTED BILL TICKET ]
                 </span>
                 <h4 className="text-xl font-serif italic text-cream-100">
                   Your Customized Sitting Flight
                 </h4>
-                <p className="text-[11px] text-stone-light font-light leading-relaxed mt-1">
+                <p className="text-xs font-semibold text-stone-light font-light leading-relaxed mt-1">
                   Review your selection below. Tapping a course above live-updates your table ticket composition.
                 </p>
               </div>
 
               {/* Summary line */}
-              <div className="text-[10px] text-[#A5F3FC]/90 tracking-widest leading-relaxed font-mono uppercase">
+              <div className="text-xs font-semibold tracking-wider text-[#A5F3FC]/90 tracking-widest leading-relaxed font-mono uppercase">
                 {compositionSummary}
               </div>
 
@@ -696,7 +696,7 @@ export default function App() {
                   <div className="pt-2">
                     <button
                       onClick={() => setSommelierPairing(!sommelierPairing)}
-                      className="text-[10px] tracking-widest uppercase text-[#D4AF37] hover:text-cream-100 cursor-pointer"
+                      className="text-xs font-semibold tracking-wider tracking-widest uppercase text-[#D4AF37] hover:text-cream-100 cursor-pointer"
                     >
                       {sommelierPairing ? '[[ X ]] BIODYNAMIC SOMMELIER ACTIVE' : '[[   ]] ADD SOMMELIER BIO-PAIRINGS (+$15/course)'}
                     </button>
@@ -725,7 +725,7 @@ export default function App() {
                   e.preventDefault();
                   setIsTablesideQR(false);
                 }}
-                className="text-[10px] font-mono tracking-widest text-[#D4AF37] hover:text-cream-100 uppercase cursor-pointer"
+                className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#D4AF37] hover:text-cream-100 uppercase cursor-pointer"
               >
                 [[ EXIT TABLESIDE VIEW & GO TO RESERVATION FORM ]]
               </button>
@@ -746,7 +746,7 @@ export default function App() {
               </p>
               
               {/* Call To Action Row */}
-              <div className="flex justify-center items-center gap-6 pt-6 text-xs md:text-sm font-mono tracking-[0.25em] text-[#D4AF37]">
+              <div className="flex justify-center items-center gap-6 pt-6 text-base font-semibold font-mono tracking-[0.25em] text-[#D4AF37]">
                 <button
                   onClick={() => scrollToSection('sitting-layout-section')}
                   className="font-semibold hover:text-cream-100 transition-colors uppercase cursor-pointer"
@@ -771,7 +771,7 @@ export default function App() {
               </div>
               
               {/* Low-Contrast Status */}
-              <p className="text-[11px] md:text-xs font-mono tracking-widest text-stone-400 uppercase pt-4 block font-semibold">
+              <p className="text-xs font-semibold md:text-xs font-mono tracking-widest text-stone-400 uppercase pt-4 block font-semibold">
                 LIMITED ENGAGEMENT — 3 SITTINGS REMAINING THIS INTERVAL
               </p>
             </div>
@@ -788,14 +788,14 @@ export default function App() {
                     <span>[ HARVEST INDEX ]</span>
                     <span className="text-[#A5F3FC]">● ACTIVE</span>
                   </div>
-                  <p className="text-xs sm:text-sm font-mono text-cream-200 uppercase tracking-wider mb-2 font-semibold">
+                  <p className="text-base font-semibold font-mono text-cream-200 uppercase tracking-wider mb-2 font-semibold">
                     ORGANIC ALIGNMENT: 98%
                   </p>
-                  <p className="text-stone-200 text-xs sm:text-sm font-medium leading-relaxed mb-4">
+                  <p className="text-stone-200 text-base font-semibold font-medium leading-relaxed mb-4">
                     Today, oats are being wood-milled, elderberry vinegar is at peak sourness, and wild chanterelles have successfully arrived from the high slopes.
                   </p>
                 </div>
-                <div className="border-t-[0.5px] border-stone-dark/30 pt-3 flex justify-between items-center text-[10px] font-mono">
+                <div className="border-t-[0.5px] border-stone-dark/30 pt-3 flex justify-between items-center text-xs font-semibold tracking-wider font-mono">
                   <span className="text-stone-muted">CURATOR:</span>
                   <span className="text-cream-100 uppercase tracking-widest">MARCUS VANCE</span>
                 </div>
@@ -805,7 +805,7 @@ export default function App() {
             <div className="border-t-[0.5px] border-b-[0.5px] border-stone-dark/30 py-6">
               <div className="space-y-4">
                 <div>
-                  <span className="text-[10px] font-mono tracking-editorial text-stone-muted uppercase block mb-1">
+                  <span className="text-xs font-semibold tracking-wider font-mono tracking-editorial text-stone-muted uppercase block mb-1">
                     01 — ESTABLISH EXPERIENCE
                   </span>
                   <h2 className="text-lg font-serif text-cream-200 italic">
@@ -846,7 +846,7 @@ export default function App() {
             {/* ACTIVE EXPERIENCE SUMMARY & TEXT DIETARY FILTER */}
             <div className="space-y-6 pt-2">
               <div>
-                <span className="text-[10px] sm:text-xs font-mono tracking-widest text-[#D4AF37] uppercase block mb-1 font-semibold">
+                <span className="text-xs font-semibold tracking-wider sm:text-xs font-mono tracking-widest text-[#D4AF37] uppercase block mb-1 font-semibold">
                   [ {activeExperience.schedule} ]
                 </span>
                 <h3 className="text-2xl font-serif text-cream-100 italic mb-3">
@@ -855,17 +855,17 @@ export default function App() {
                 <p className="text-sm md:text-base text-stone-200 leading-relaxed font-medium mb-4 text-justify">
                   {activeExperience.description}
                 </p>
-                <p className="text-xs sm:text-sm font-serif text-stone-300 italic border-l-2 border-[#D4AF37]/50 pl-4 py-1.5 leading-relaxed">
+                <p className="text-base font-semibold font-serif text-stone-300 italic border-l-2 border-[#D4AF37]/50 pl-4 py-1.5 leading-relaxed">
                   {selectedExpId === 'tasting' ? `“${(PRESETS[brandConfig?.activePreset || 'culinaryAtelier'] || PRESETS.culinaryAtelier).ethos}”` : activeExperience.chefQuote}
                 </p>
               </div>
 
               {/* Interactive Dietary Micro-Filters */}
               <div className="bg-obsidian-900 border-[0.5px] border-stone-dark/45 p-5">
-                <span className="text-[10px] font-mono tracking-widest text-stone-300 uppercase block mb-3 font-semibold">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-stone-300 uppercase block mb-3 font-semibold">
                   DIETARY SELECTION & ALIGNMENT
                 </span>
-                <p className="text-xs md:text-sm text-stone-200 font-medium mb-4 leading-relaxed">
+                <p className="text-base font-semibold text-stone-200 font-medium mb-4 leading-relaxed">
                   Select an option below to highlight matching courses on our print layout. Items that do not match are elegantly muted to sustain aesthetic integrity.
                 </p>
                 
@@ -898,10 +898,10 @@ export default function App() {
             {/* 02 — THE WINTER SITTING LAYOUT */}
             <div id="sitting-layout-section">
               <div className="flex justify-between items-center border-b-[0.5px] border-stone-dark/30 pb-3 mb-8">
-                <span className="text-[10px] font-mono tracking-editorial text-stone-muted uppercase">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-editorial text-stone-muted uppercase">
                   02 — THE WINTER SITTING LAYOUT
                 </span>
-                <span className="text-[11px] font-serif italic text-stone-muted hidden sm:inline">
+                <span className="text-xs font-semibold font-serif italic text-stone-muted hidden sm:inline">
                   Click course names or [[ SELECT ]] to customize Sitting flight
                 </span>
               </div>
@@ -941,7 +941,7 @@ export default function App() {
                         <div className="p-6 flex-1 flex flex-col justify-between">
                           <div>
                             {/* 1. Course Index */}
-                            <div className="text-stone-dark text-[10px] font-mono uppercase tracking-widest mb-2">
+                            <div className="text-stone-dark text-xs font-semibold tracking-wider font-mono uppercase tracking-widest mb-2">
                               {dish.courseNumber || `Item 0${idx + 1}`}
                             </div>
      
@@ -1002,13 +1002,13 @@ export default function App() {
                             <div className="flex gap-2 text-xs font-mono mt-4 justify-between items-center">
                               <button
                                 onClick={() => setInspectingDish(dish)}
-                                className="text-stone-muted hover:text-cream-100 transition-all duration-300 hover:tracking-widest uppercase tracking-widest text-[10px] rounded-none shadow-none outline-none cursor-pointer"
+                                className="text-stone-muted hover:text-cream-100 transition-all duration-300 hover:tracking-widest uppercase tracking-widest text-xs font-semibold tracking-wider rounded-none shadow-none outline-none cursor-pointer"
                               >
                                 [[ SCENT & SOIL NOTE ]]
                               </button>
                               <button
                                 onClick={() => toggleDishSelect(dish.id)}
-                                className={`text-[10px] tracking-widest uppercase transition-all duration-300 px-3 py-1 rounded-none shadow-none outline-none border-[0.5px] ${
+                                className={`text-xs font-semibold tracking-wider tracking-widest uppercase transition-all duration-300 px-3 py-1 rounded-none shadow-none outline-none border-[0.5px] ${
                                   isSelectedForItinerary 
                                     ? 'border-cream-100 bg-cream-100 text-obsidian-950 font-medium' 
                                     : 'border-stone-dark/30 text-stone-muted hover:text-cream-100 hover:bg-[#141413]'
@@ -1055,7 +1055,7 @@ export default function App() {
               
               <div className="lg:col-span-7">
                 <div className="flex justify-between items-baseline mb-2">
-                  <span className="text-[10px] font-mono tracking-editorial text-stone-muted uppercase block">
+                  <span className="text-xs font-semibold tracking-wider font-mono tracking-editorial text-stone-muted uppercase block">
                     03 — INTERACTIVE CUSTOM SITTING BUILDER
                   </span>
                   <button
@@ -1087,7 +1087,7 @@ export default function App() {
                       <span className="text-sm font-mono uppercase tracking-wider text-cream-100 block transition-all duration-300 group-hover:tracking-[0.11em] group-hover:text-cream-50 font-semibold">
                         {sommelierPairing ? '[ PAIRINGS ACTIVE ]' : '[ INCLUDE SOMMELIER BIODYNAMIC PAIRINGS ]'} (+ $15 per course)
                       </span>
-                      <span className="text-xs md:text-sm text-stone-300 font-semibold block mt-1 leading-relaxed">
+                      <span className="text-base font-semibold text-stone-300 font-semibold block mt-1 leading-relaxed">
                         Aligns every organic dish with cellared wild ferments, low-intervention pet-nats, or unreleased vintage port.
                       </span>
                     </div>
@@ -1097,11 +1097,11 @@ export default function App() {
                   <div className="mt-8 pt-6 border-t-[0.5px] border-stone-dark/30">
                     <div className="flex items-center gap-2 mb-4 select-none">
                       <Sparkles className="text-cream-200/60 w-3.5 h-3.5 shrink-0" />
-                      <span className="text-[10px] md:text-xs font-mono tracking-[0.25em] text-cream-200/80 uppercase font-semibold">Premium AI sensory add-on</span>
+                      <span className="text-xs font-semibold tracking-wider md:text-xs font-mono tracking-[0.25em] text-cream-200/80 uppercase font-semibold">Premium AI sensory add-on</span>
                     </div>
                     
                     {selectedCourses.length === 0 ? (
-                      <p className="text-[10px] md:text-xs font-mono tracking-[0.2em] text-cream-200/60 uppercase font-semibold">
+                      <p className="text-xs font-semibold tracking-wider md:text-xs font-mono tracking-[0.2em] text-cream-200/60 uppercase font-semibold">
                         [ SELECT ONE OR MORE COURSES ABOVE TO PREVIEW SOMMELIER FLIGHT ]
                       </p>
                     ) : (
@@ -1113,7 +1113,7 @@ export default function App() {
                           type="button"
                           onClick={requestSensoryCuration}
                           disabled={curationLoading}
-                          className="px-5 py-2.5 bg-[#141413] border border-stone-dark/30 hover:border-[#D4AF37]/60 hover:bg-[#1c1c1b] text-cream-200/80 hover:text-cream-100 transition-all text-xs font-mono uppercase tracking-[0.2em] rounded-none shadow-none outline-none cursor-pointer disabled:opacity-50 font-semibold"
+                          className="px-5 py-3 min-h-[44px] bg-[#141413] border border-stone-dark/30 hover:border-[#D4AF37]/60 hover:bg-[#1c1c1b] text-cream-200/80 hover:text-cream-100 transition-all text-base font-semibold min-h-[44px] font-mono uppercase tracking-[0.2em] rounded-none shadow-none outline-none cursor-pointer disabled:opacity-50 font-semibold"
                         >
                           {curationLoading ? '⟳ RECONSTRUCTING SENSORY MAPS...' : '✦ GENERATE SENSORY NARRATIVE'}
                         </button>
@@ -1132,11 +1132,11 @@ export default function App() {
               {/* Pricing Calculation Bill-Of-Fare Column */}
               <div className="lg:col-span-5 border-t-[0.5px] lg:border-t-0 lg:border-l-[0.5px] border-stone-dark/30 pt-8 lg:pt-0 lg:pl-12 flex flex-col justify-between">
                 <div>
-                  <span className="text-[10px] font-mono tracking-widest text-[#D4AF37] uppercase block mb-4">
+                  <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#D4AF37] uppercase block mb-4">
                     [ THE COMPOSITION BILL ]
                   </span>
 
-                  <div className="mb-4 tracking-widest text-[#A5F3FC]/90 text-[11px] font-mono uppercase leading-relaxed">
+                  <div className="mb-4 tracking-widest text-[#A5F3FC]/90 text-xs font-semibold font-mono uppercase leading-relaxed">
                     {compositionSummary}
                   </div>
 
@@ -1270,7 +1270,7 @@ export default function App() {
                             The Narrative of Your Selected Flight
                           </h4>
                         </div>
-                        <div className="flex items-center gap-3 font-mono text-[10px]">
+                        <div className="flex items-center gap-3 font-mono text-xs font-semibold tracking-wider">
                           <span className="text-stone-muted tracking-widest">GASTRONOMIC SYNERGY:</span>
                           <span className="text-[#D4AF37] font-bold tracking-widest bg-stone-900 border-[0.5px] border-[#D4AF37]/30 px-2.5 py-1">
                             {curationResult.harmonyIndex}%
@@ -1281,13 +1281,13 @@ export default function App() {
                       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
                         {/* Column 1: Poetic Narrative Essay */}
                         <div className="lg:col-span-6 space-y-4 text-left">
-                          <p className="text-[10px] md:text-xs font-mono text-stone-400 uppercase tracking-[0.25em] block font-semibold">
+                          <p className="text-xs font-semibold tracking-wider md:text-xs font-mono text-stone-400 uppercase tracking-[0.25em] block font-semibold">
                             [ FLAVOR PROGRESSION NARRATIVE ]
                           </p>
                           <p className="text-base sm:text-lg lg:text-xl font-medium text-cream-100 font-serif italic leading-relaxed">
                             "{curationResult.sensoryNarrative}"
                           </p>
-                          <div className="bg-[#141413] border-[0.5px] border-stone-dark/20 p-5 font-mono text-xs md:text-sm text-stone-300 uppercase tracking-[0.15em] leading-relaxed rounded-none font-medium">
+                          <div className="bg-[#141413] border-[0.5px] border-stone-dark/20 p-5 font-mono text-base font-semibold text-stone-300 uppercase tracking-[0.15em] leading-relaxed rounded-none font-medium">
                             <span className="text-cream-100 block mb-1 font-bold">✦ SOMMELIER HYPOTHESIS:</span>
                             {curationResult.harmonyExplanation}
                           </div>
@@ -1295,19 +1295,19 @@ export default function App() {
 
                         {/* Column 2: Specific wine/sake pairings */}
                         <div className="lg:col-span-6 space-y-4 text-left">
-                          <p className="text-[10px] md:text-xs font-mono text-cream-200/80 uppercase tracking-[0.25em] block font-semibold">
+                          <p className="text-xs font-semibold tracking-wider md:text-xs font-mono text-cream-200/80 uppercase tracking-[0.25em] block font-semibold">
                             [ CUSTOM BIODYNAMIC VINTAGE MATCHES ]
                           </p>
                           <div className="space-y-5">
                             {curationResult.pairings.map((p, index) => (
                               <div key={index} className="border-l-[0.5px] border-stone-muted/20 pl-4 space-y-1">
-                                <span className="text-[10px] md:text-xs font-mono text-stone-400 uppercase tracking-widest block font-medium">
+                                <span className="text-xs font-semibold tracking-wider md:text-xs font-mono text-stone-400 uppercase tracking-widest block font-medium">
                                   {p.courseName}
                                 </span>
-                                <h5 className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-[#A5F3FC] font-semibold">
+                                <h5 className="text-base font-semibold font-mono uppercase tracking-[0.2em] text-[#A5F3FC] font-semibold">
                                   {p.wineName}
                                 </h5>
-                                <p className="text-xs md:text-sm text-stone-200 font-medium leading-relaxed">
+                                <p className="text-base font-semibold text-stone-200 font-medium leading-relaxed">
                                   {p.wineDesc}
                                 </p>
                               </div>
@@ -1325,7 +1325,7 @@ export default function App() {
             <section id="reservation-desk" className="pt-8">
               <div className="border-t border-obsidian-800 pt-12">
                 <div className="text-center max-w-xl mx-auto mb-12">
-                  <span className="text-[10px] font-mono tracking-editorial text-stone-muted uppercase block mb-2">
+                  <span className="text-xs font-semibold tracking-wider font-mono tracking-editorial text-stone-muted uppercase block mb-2">
                     04 — RESERVATIONS
                   </span>
                   <h3 className="text-4xl font-serif text-cream-100 italic">
@@ -1350,7 +1350,7 @@ export default function App() {
                         
                         {/* Visual Sitting Time Slot Selection */}
                         <div className="space-y-3">
-                          <label className="block text-xs font-mono uppercase tracking-wider text-stone-light">
+                          <label className="block text-sm font-semibold font-mono uppercase tracking-wider text-stone-light">
                             Select Available Sitting Hour
                           </label>
                           <div className="grid grid-cols-2 gap-3" id="sitting-times">
@@ -1371,7 +1371,7 @@ export default function App() {
                                 <span className={`text-lg font-serif italic ${reservedTime === slot.time ? 'text-obsidian-950 font-semibold' : 'text-cream-200'}`}>
                                   {slot.time}
                                 </span>
-                                <span className={`text-[10px] font-mono mt-2 block ${reservedTime === slot.time ? 'text-stone-dark' : 'text-stone-muted'}`}>
+                                <span className={`text-xs font-semibold tracking-wider font-mono mt-2 block ${reservedTime === slot.time ? 'text-stone-dark' : 'text-stone-muted'}`}>
                                   {slot.label} / {slot.seatsLeft} SEATS LEFT
                                 </span>
                               </button>
@@ -1382,7 +1382,7 @@ export default function App() {
                         {/* Guests selector */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
                           <div className="space-y-1.5">
-                            <label className="block text-xs font-mono uppercase tracking-wider text-stone-light">
+                            <label className="block text-sm font-semibold font-mono uppercase tracking-wider text-stone-light">
                               Guests Count
                             </label>
                             <select 
@@ -1416,7 +1416,7 @@ export default function App() {
                         {/* Client contact info */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           <div className="space-y-1.5">
-                            <label className="block text-xs font-mono uppercase tracking-wider text-stone-muted">
+                            <label className="block text-sm font-semibold font-mono uppercase tracking-wider text-stone-muted">
                               Client full name
                             </label>
                             <input 
@@ -1429,7 +1429,7 @@ export default function App() {
                             />
                           </div>
                           <div className="space-y-1.5">
-                            <label className="block text-xs font-mono uppercase tracking-wider text-[#A5F3FC]">
+                            <label className="block text-sm font-semibold font-mono uppercase tracking-wider text-[#A5F3FC]">
                               Secure notify email
                             </label>
                             <input 
@@ -1447,7 +1447,7 @@ export default function App() {
                         <div className="pt-4">
                           <button 
                             type="submit"
-                            className="w-full py-4 bg-cream-50 text-obsidian-950 font-mono uppercase text-xs tracking-widest font-semibold hover:bg-cream-100 transition-colors uppercase cursor-pointer"
+                            className="w-full py-4 bg-cream-50 text-obsidian-950 font-mono uppercase text-base font-semibold min-h-[44px] tracking-widest font-semibold hover:bg-cream-100 transition-colors uppercase cursor-pointer"
                             id="submit-reservation"
                           >
                             Request Reservation
@@ -1492,7 +1492,7 @@ export default function App() {
                           </div>
                           <div className="flex justify-between border-t border-obsidian-800 pt-3">
                             <span className="text-stone-muted font-bold text-[9px] tracking-widest">SECURE LINK TOKEN:</span>
-                            <span className="text-[#D4AF37] text-[10px]">AURA-{Math.random().toString(36).substring(2, 8).toUpperCase()}</span>
+                            <span className="text-[#D4AF37] text-xs font-semibold tracking-wider">AURA-{Math.random().toString(36).substring(2, 8).toUpperCase()}</span>
                           </div>
                         </div>
 
@@ -1518,20 +1518,20 @@ export default function App() {
             {/* BRUTALIST ALIGNMENT DETAILS / ADDITIONAL EDITORIAL LOOKBOOK STATS */}
             <section className="pt-16 border-t border-obsidian-800 grid grid-cols-1 md:grid-cols-3 gap-8 text-xs font-mono">
               <div className="space-y-4">
-                <span className="text-[#D4AF37] block uppercase tracking-widest text-[10px] font-bold">01 / SOIL INTEGRITY</span>
-                <p className="text-stone-200 font-semibold leading-relaxed text-xs sm:text-sm">
+                <span className="text-[#D4AF37] block uppercase tracking-widest text-xs font-semibold tracking-wider font-bold">01 / SOIL INTEGRITY</span>
+                <p className="text-stone-200 font-semibold leading-relaxed text-base font-semibold">
                   Every root, stem, flower, and grain matches direct botanical trace coordinate maps. We completely discard standard regional wholesaling, opting instead to support 4 hyper-local small plots.
                 </p>
               </div>
               <div className="space-y-4">
-                <span className="text-[#D4AF37] block uppercase tracking-widest text-[10px] font-bold">02 / TEMPERATURE & WOOD</span>
-                <p className="text-stone-200 font-semibold leading-relaxed text-xs sm:text-sm">
+                <span className="text-[#D4AF37] block uppercase tracking-widest text-xs font-semibold tracking-wider font-bold">02 / TEMPERATURE & WOOD</span>
+                <p className="text-stone-200 font-semibold leading-relaxed text-base font-semibold">
                   We burn seasoned cherry and coastal oak tree fall from seasonal storms. Our flame chambers are manually monitored every 15 minutes to guarantee moisture lock.
                 </p>
               </div>
               <div className="space-y-4">
-                <span className="text-[#D4AF37] block uppercase tracking-widest text-[10px] font-bold">03 / ATMOSPHERIC PEACE</span>
-                <p className="text-stone-200 font-semibold leading-relaxed text-xs sm:text-sm">
+                <span className="text-[#D4AF37] block uppercase tracking-widest text-xs font-semibold tracking-wider font-bold">03 / ATMOSPHERIC PEACE</span>
+                <p className="text-stone-200 font-semibold leading-relaxed text-base font-semibold">
                   To minimize modern noise, we prohibit flash lenses and active phone displays inside the primary room. We provide secure canvas pocket envelopes for personal screens upon intake.
                 </p>
               </div>
@@ -1547,13 +1547,13 @@ export default function App() {
         <div className="mt-20 border-t-[0.5px] border-stone-dark/30 pt-10" id="shopify-creator-documentation">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
             <div>
-              <span className="text-[10px] font-mono tracking-widest text-[#D4AF37] uppercase block mb-1 font-bold">
+              <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#D4AF37] uppercase block mb-1 font-bold">
                 [ INTEGRATION MANUAL ]
               </span>
               <h4 className="text-sm font-mono uppercase tracking-[0.2em] text-cream-100 font-semibold">
                 Shopify Tag Architecture Specification
               </h4>
-              <p className="text-xs sm:text-sm text-stone-300 font-medium mt-1 leading-relaxed">
+              <p className="text-base font-semibold text-stone-300 font-medium mt-1 leading-relaxed">
                 Developer guidelines for dynamic metadata rendering across digital menus & custom sittings.
               </p>
             </div>
@@ -1576,7 +1576,7 @@ export default function App() {
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
                 className="overflow-hidden"
               >
-                <div className="bg-stone-950/40 border-[0.5px] border-stone-800/60 rounded-none p-6 md:p-8 space-y-8 font-mono text-xs sm:text-sm text-stone-200 tracking-wide leading-relaxed font-medium">
+                <div className="bg-stone-950/40 border-[0.5px] border-stone-800/60 rounded-none p-6 md:p-8 space-y-8 font-mono text-base font-semibold text-stone-200 tracking-wide leading-relaxed font-medium">
                   
                   {/* Shopify Tag Integration Directory */}
                   <div className="space-y-4">
@@ -1591,7 +1591,7 @@ export default function App() {
                     <div className="overflow-x-auto pt-2">
                       <table className="w-full text-left font-mono border-collapse text-xs">
                         <thead>
-                          <tr className="border-b-[0.5px] border-stone-800/60 text-[#A5F3FC] text-[10px] md:text-xs tracking-widest uppercase">
+                          <tr className="border-b-[0.5px] border-stone-800/60 text-[#A5F3FC] text-xs font-semibold tracking-wider md:text-xs tracking-widest uppercase">
                             <th className="py-3 pr-4 font-bold text-stone-300">SHOPIFY INTEGRATION TAG</th>
                             <th className="py-3 px-4 font-bold text-stone-300">DYNAMIC ENGINE ROUTING RULE</th>
                             <th className="py-3 pl-4 font-bold text-stone-300">CORE MATRIX INTERFACE</th>
@@ -1603,7 +1603,7 @@ export default function App() {
                             <td className="py-4 px-4 font-medium text-stone-300">
                               Maps dynamic arrays from localStorage to checkout line-item attributes.
                             </td>
-                            <td className="py-4 pl-4 text-[#D4AF37] uppercase tracking-wider text-[10px] font-bold font-mono">
+                            <td className="py-4 pl-4 text-[#D4AF37] uppercase tracking-wider text-xs font-semibold tracking-wider font-bold font-mono">
                               line-item-attributes
                             </td>
                           </tr>
@@ -1612,7 +1612,7 @@ export default function App() {
                             <td className="py-4 px-4 font-medium text-stone-300">
                               Injects conditional variable modifiers (+$15/course) directly into the shopify cart matrix.
                             </td>
-                            <td className="py-4 pl-4 text-[#D4AF37] uppercase tracking-wider text-[10px] font-bold font-mono">
+                            <td className="py-4 pl-4 text-[#D4AF37] uppercase tracking-wider text-xs font-semibold tracking-wider font-bold font-mono">
                               cart-matrix-modifier
                             </td>
                           </tr>
@@ -1621,7 +1621,7 @@ export default function App() {
                             <td className="py-4 px-4 font-medium text-stone-300">
                               Routes seat counts to real-time checkout product inventory limits.
                             </td>
-                            <td className="py-4 pl-4 text-[#D4AF37] uppercase tracking-wider text-[10px] font-bold font-mono">
+                            <td className="py-4 pl-4 text-[#D4AF37] uppercase tracking-wider text-xs font-semibold tracking-wider font-bold font-mono">
                               realtime-inventory-latch
                             </td>
                           </tr>
@@ -1639,13 +1639,13 @@ export default function App() {
                       <span>◆ SPEC 02 :</span>
                       <span>Catalog Metadata Resolution & Namespace Filtering</span>
                     </div>
-                    <p className="text-stone-300 font-medium leading-relaxed text-xs sm:text-sm">
+                    <p className="text-stone-300 font-medium leading-relaxed text-base font-semibold">
                       Products synchronized from the Shopify catalog populate custom header labels dynamically by parsing designated namespaces in the product tag stream. 
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                        <div className="bg-stone-900/60 border-[0.5px] border-stone-800/60 p-4 rounded-none">
-                         <span className="text-[#A5F3FC] block mb-2 text-[10px] uppercase font-bold">TAG PARAM: METHOD</span>
-                         <div className="bg-stone-950/80 p-2 text-cream-100 font-mono text-[10px] mb-2 border-[0.5px] border-stone-800/60">
+                         <span className="text-[#A5F3FC] block mb-2 text-xs font-semibold tracking-wider uppercase font-bold">TAG PARAM: METHOD</span>
+                         <div className="bg-stone-950/80 p-2 text-cream-100 font-mono text-xs font-semibold tracking-wider mb-2 border-[0.5px] border-stone-800/60">
                            method:CLAY BAKED
                          </div>
                          <p className="text-xs text-stone-200 font-medium leading-relaxed">
@@ -1654,11 +1654,11 @@ export default function App() {
                        </div>
 
                       <div className="bg-stone-900/60 border-[0.5px] border-stone-800/60 p-4 rounded-none">
-                        <span className="text-[#A5F3FC] block mb-2 text-[10px] uppercase font-bold">TAG PARAM: ALIGNMENT</span>
-                        <div className="bg-stone-950/80 p-2 text-cream-100 font-mono text-[10px] mb-2 border-[0.5px] border-stone-800/60">
+                        <span className="text-[#A5F3FC] block mb-2 text-xs font-semibold tracking-wider uppercase font-bold">TAG PARAM: ALIGNMENT</span>
+                        <div className="bg-stone-950/80 p-2 text-cream-100 font-mono text-xs font-semibold tracking-wider mb-2 border-[0.5px] border-stone-800/60">
                           alignment:98%
                         </div>
-                        <p className="text-[11px] text-stone-muted leading-relaxed">
+                        <p className="text-xs font-semibold text-stone-muted leading-relaxed">
                           Sets the certified organic alignment rating shown in calculations. Must terminate with a percentage sign (<span className="text-cream-200 font-mono">%</span>) for accurate mathematical aggregation.
                         </p>
                       </div>
@@ -1670,7 +1670,7 @@ export default function App() {
 
                   {/* Spec 03: Zero-Code Dietary Mappings */}
                   <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-[#D4AF37] font-semibold text-[11px] uppercase tracking-wider">
+                    <div className="flex items-center gap-2 text-[#D4AF37] font-semibold text-xs font-semibold uppercase tracking-wider">
                       <span>◆ SPEC 03 :</span>
                       <span>Zero-Code Case-Insensitive Dietary & Conflict Engines</span>
                     </div>
@@ -1684,7 +1684,7 @@ export default function App() {
 
                   {/* Spec 04: Hardware & Environment System Injections */}
                   <div className="space-y-4">
-                    <div className="flex items-center gap-2 text-[#D4AF37] font-semibold text-[11px] uppercase tracking-wider">
+                    <div className="flex items-center gap-2 text-[#D4AF37] font-semibold text-xs font-semibold uppercase tracking-wider">
                       <span>◆ SPEC 04 :</span>
                       <span>[[ HARDWARE & ENVIRONMENT SYSTEM INJECTIONS ]]</span>
                     </div>
@@ -1696,8 +1696,8 @@ export default function App() {
                       {/* Control 1: Active Storefront Preset (Atelier vs Maritime) */}
                       <div className="bg-stone-900/40 border-[0.5px] border-stone-800/60 p-4 rounded-none flex flex-col justify-between space-y-3">
                         <div>
-                          <span className="text-[#A5F3FC] block text-[10px] uppercase font-bold">[ LOCAL STOREFRONT PRESET ]</span>
-                          <span className="text-[10px] text-stone-muted block mt-1 leading-normal">Changes brand theme & concept context</span>
+                          <span className="text-[#A5F3FC] block text-xs font-semibold tracking-wider uppercase font-bold">[ LOCAL STOREFRONT PRESET ]</span>
+                          <span className="text-xs font-semibold tracking-wider text-stone-muted block mt-1 leading-normal">Changes brand theme & concept context</span>
                         </div>
                         <div className="flex items-center gap-1 bg-stone-950/80 border-[0.5px] border-stone-800/60 p-1.5 justify-around">
                           <button 
@@ -1723,8 +1723,8 @@ export default function App() {
                       {/* Control 2: Visual Print Engine */}
                       <div className="bg-stone-900/40 border-[0.5px] border-stone-800/60 p-4 rounded-none flex flex-col justify-between space-y-3">
                         <div>
-                          <span className="text-[#A5F3FC] block text-[10px] uppercase font-bold">[ RASTER PRINT DRIVER ]</span>
-                          <span className="text-[10px] text-stone-muted block mt-1 leading-normal">Render raw table menu layout</span>
+                          <span className="text-[#A5F3FC] block text-xs font-semibold tracking-wider uppercase font-bold">[ RASTER PRINT DRIVER ]</span>
+                          <span className="text-xs font-semibold tracking-wider text-stone-muted block mt-1 leading-normal">Render raw table menu layout</span>
                         </div>
                         <button
                           onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
@@ -1741,8 +1741,8 @@ export default function App() {
                       {/* Control 3: Olfactory Node override */}
                       <div className="bg-stone-900/40 border-[0.5px] border-stone-800/60 p-4 rounded-none flex flex-col justify-between space-y-3">
                         <div>
-                          <span className="text-[#A5F3FC] block text-[10px] uppercase font-bold">[ ATMO SCENT EMITTER ]</span>
-                          <span className="text-[10px] text-stone-muted block mt-1 leading-normal">Toggle synthesized scent valves</span>
+                          <span className="text-[#A5F3FC] block text-xs font-semibold tracking-wider uppercase font-bold">[ ATMO SCENT EMITTER ]</span>
+                          <span className="text-xs font-semibold tracking-wider text-stone-muted block mt-1 leading-normal">Toggle synthesized scent valves</span>
                         </div>
                         <button 
                           onClick={() => setIsMuted(!isMuted)} 
@@ -1756,8 +1756,8 @@ export default function App() {
                       {/* Control 4: Tableside Terminal Link */}
                       <div className="bg-stone-900/40 border-[0.5px] border-stone-800/60 p-4 rounded-none flex flex-col justify-between space-y-3">
                         <div>
-                          <span className="text-[#A5F3FC] block text-[10px] uppercase font-bold">[ TABLESIDE LUNAR QR ]</span>
-                          <span className="text-[10px] text-stone-muted block mt-1 leading-normal">Simulate diner interface projection</span>
+                          <span className="text-[#A5F3FC] block text-xs font-semibold tracking-wider uppercase font-bold">[ TABLESIDE LUNAR QR ]</span>
+                          <span className="text-xs font-semibold tracking-wider text-stone-muted block mt-1 leading-normal">Simulate diner interface projection</span>
                         </div>
                         <button
                           onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
@@ -1798,11 +1798,11 @@ export default function App() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
             <h5 className="text-lg font-serif italic text-cream-100">{brandConfig?.conceptName || 'The Winter Parlor'}</h5>
-            <p className="text-[10px] font-mono text-stone-muted uppercase tracking-widest mt-1">
+            <p className="text-xs font-semibold tracking-wider font-mono text-stone-muted uppercase tracking-widest mt-1">
               © 2026 AURA & GRID STUDIOS. ALL RIGHTS RESERVED.
             </p>
           </div>
-          <div className="flex flex-wrap gap-6 md:gap-8 text-[10px] font-mono text-stone-muted uppercase tracking-wider">
+          <div className="flex flex-wrap gap-6 md:gap-8 text-xs font-semibold tracking-wider font-mono text-stone-muted uppercase tracking-wider">
             <a href="#" className="hover:text-cream-100 transition-colors">[ CULINARY ETHOS ]</a>
             <a href="#" className="hover:text-cream-100 transition-colors">[ FARMLAND DIRECTORY ]</a>
             <a href="#" className="hover:text-cream-100 transition-colors">[ TERMS OF SERVICE ]</a>
@@ -1838,7 +1838,7 @@ export default function App() {
               <div>
                 {/* Close handle */}
                 <div className="flex justify-between items-center border-b border-obsidian-800 pb-6 mb-8">
-                  <span className="text-[10px] font-mono text-stone-muted tracking-widest uppercase">
+                  <span className="text-xs font-semibold tracking-wider font-mono text-stone-muted tracking-widest uppercase">
                     [ RECORD INSPECTOR ]
                   </span>
                   <button 
@@ -1849,7 +1849,7 @@ export default function App() {
                   </button>
                 </div>
 
-                <span className="text-[10px] font-mono text-[#D4AF37] uppercase tracking-widest block mb-2">
+                <span className="text-xs font-semibold tracking-wider font-mono text-[#D4AF37] uppercase tracking-widest block mb-2">
                   {inspectingDish.courseNumber || 'Winter Special Block'}
                 </span>
                 <h3 className="text-3xl md:text-4xl font-serif text-cream-100 italic">
@@ -1876,7 +1876,7 @@ export default function App() {
 
                 <div className="mt-8 space-y-6">
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-stone-muted block mb-2">
+                    <span className="text-xs font-semibold tracking-wider font-mono uppercase tracking-widest text-stone-muted block mb-2">
                       SENSORY & TEXTURAL ESSENCE
                     </span>
                     <p className="text-sm text-stone-light font-light leading-relaxed">
@@ -1886,7 +1886,7 @@ export default function App() {
 
                   {/* Botanical profile and farmers metadata */}
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-stone-muted block mb-2">
+                    <span className="text-xs font-semibold tracking-wider font-mono uppercase tracking-widest text-stone-muted block mb-2">
                       BOTANICAL COORDINATE RECORD
                     </span>
                     
@@ -1911,7 +1911,7 @@ export default function App() {
                   </div>
 
                   <div>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-stone-muted block mb-2">
+                    <span className="text-xs font-semibold tracking-wider font-mono uppercase tracking-widest text-stone-muted block mb-2">
                       DIETARY ALIGNMENT INDEX
                     </span>
                     <div className="flex flex-wrap gap-2">
@@ -1978,7 +1978,7 @@ export default function App() {
       */}
       <div className="hidden print:block print:w-full print:max-w-2xl print:mx-auto print:text-black print:bg-white print:p-12 print:font-serif">
         <div className="text-center border-b-[0.5px] border-black pb-8 mb-10">
-          <p className="text-[10px] font-mono tracking-editorial uppercase mb-2 text-stone-600">{(brandConfig?.studioName || 'AURA & GRID')} BLUEPRINT // TABLESIDE MENU</p>
+          <p className="text-xs font-semibold tracking-wider font-mono tracking-editorial uppercase mb-2 text-stone-600">{(brandConfig?.studioName || 'AURA & GRID')} BLUEPRINT // TABLESIDE MENU</p>
           <h1 className="text-4xl font-semibold italic">{activeExperience.title}</h1>
           <p className="text-xs uppercase tracking-widest font-mono mt-2 text-stone-700">{activeExperience.timeframe}</p>
           <p className="text-xs font-light italic mt-4 max-w-lg mx-auto leading-relaxed text-stone-600">{activeExperience.description}</p>
@@ -1992,7 +1992,7 @@ export default function App() {
             <div key={dish.id} className="break-inside-avoid pb-4">
               <div className="flex justify-between items-baseline border-b-[0.5px] border-dotted border-black/40 pb-1 mb-2">
                 <h3 className="text-lg italic font-medium">
-                  <span className="font-mono text-[10px] mr-3 font-normal">{(index + 1).toString().padStart(2, '0')}</span>
+                  <span className="font-mono text-xs font-semibold tracking-wider mr-3 font-normal">{(index + 1).toString().padStart(2, '0')}</span>
                   {dish.name}
                 </h3>
                 <span className="text-sm font-mono">${dish.price}</span>
@@ -2036,7 +2036,7 @@ export default function App() {
           <div className="bg-[#121216] border border-[#27272A] w-full max-w-md p-8 relative shadow-2xl">
             <button
               onClick={() => setIsAdminPassModalOpen(false)}
-              className="absolute top-4 right-4 text-zinc-500 hover:text-zinc-200 transition-colors cursor-pointer"
+              className="absolute top-4 right-4 text-zinc-300 hover:text-zinc-200 transition-colors cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
@@ -2054,11 +2054,11 @@ export default function App() {
             {/* 1-Click Cheat Code Autofill Pill */}
             <div className="mb-6 p-4 bg-[#18181E] border border-[#2E2E35]">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[11px] font-mono text-zinc-400 uppercase tracking-wider flex items-center">
+                <span className="text-xs font-semibold font-mono text-zinc-400 uppercase tracking-wider flex items-center">
                   <Sparkles className="w-3.5 h-3.5 text-amber-400 mr-1.5" />
                   DEMO CHEAT CODE
                 </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 bg-amber-500/20 text-amber-300 uppercase">
+                <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 bg-amber-500/20 text-amber-300 uppercase">
                   1-Click Fill
                 </span>
               </div>
@@ -2068,13 +2068,13 @@ export default function App() {
                 className="w-full text-left font-mono text-sm text-zinc-100 hover:text-amber-300 bg-[#0E0E12] px-3 py-2 border border-zinc-700 hover:border-amber-500/50 transition-all flex items-center justify-between cursor-pointer"
               >
                 <span>parlor2026</span>
-                <span className="text-[10px] text-zinc-500">[Click to autofill]</span>
+                <span className="text-xs font-semibold tracking-wider text-zinc-300">[Click to autofill]</span>
               </button>
             </div>
 
             <form onSubmit={handleAdminUnlock} className="space-y-4">
               <div>
-                <label className="block text-xs font-mono text-zinc-400 uppercase tracking-wider mb-2">
+                <label className="block text-sm font-semibold font-mono text-zinc-400 uppercase tracking-wider mb-2">
                   Salon Passcode
                 </label>
                 <input
@@ -2097,7 +2097,7 @@ export default function App() {
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 py-3 px-4 text-xs font-mono uppercase tracking-wider bg-amber-500 hover:bg-amber-400 text-black font-semibold transition-all cursor-pointer"
+                  className="flex-1 py-3 px-4 text-base font-semibold min-h-[44px] font-mono uppercase tracking-wider bg-amber-500 hover:bg-amber-400 text-black font-semibold transition-all cursor-pointer"
                 >
                   Unlock OS
                 </button>
